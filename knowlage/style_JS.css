@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.indent{
+    text-indent: 15px;
+}
+
+header{
+    height: 50px;
+    background-color: rgb(244, 228, 13);
+    display: flex;
+    align-items: center;
+}
+
+header i{
+    margin-left: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+header i:hover{
+    color: #fff;
+}
+
+.dark1{
+    background-color: #000;
+}
+
+.dark2{
+    background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
+    color: #fff;
+}
+
+section{
+    padding: 20px;
+    margin: 30px auto 0 auto;
+    width: 68%;
+    border-radius: 4px;
+    background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
+    border: 2px solid transparent;
+}
+
+section h1{
+    margin: 10px;
+    text-align: center;
+}
+
+section > pre{
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: block;
+    background-color: rgba(120, 214, 245,0.2);
+    padding: 15px;
+    line-height:1.5rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h1{
+    font-size: calc(1vw + 10px);
+}
+
+
+p{
+    font-size: calc(0.6vw + 5px);
+}
+
+table{
+    margin-top: 15px;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+th{
+    background-color: rgb(244, 228, 13);
+    color: #fff;
+}
+
+td{
+    padding: 20px;
+    letter-spacing: 1px;
+    background-color: rgb(244, 228, 13,0.2);
+}
+
+th,td{
+    width: 33.33%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 1130px) {
+    section{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    section{
+        padding: 10px;
+    }
+
+    td{
+        padding-top: 20px;
+        padding-left: 5px;
+    }
+
+    p{
+        font-size: px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    p{
+        font-size: 7px;
+    }
+}

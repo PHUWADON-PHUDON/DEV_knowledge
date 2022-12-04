@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHUWADON</title>
+
+    <link rel="stylesheet" href="style_JS.css">
+    <script src="https://kit.fontawesome.com/9cb18605d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <a href="mainmenu.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <i class="fa-solid fa-sun dark"></i>
+    </header>
+
+    <section>
+            <table>
+                <tr style="position: sticky; top: 0;">
+                    <th><h1>CODE</h1></th>
+                    <th><h1>MEANING</h1></th>
+                    <th><h1>SAMPLE</h1></th>
+                </tr>
+                
+                <tr class="text-center">
+                    <td>
+                        <p>document</p>
+                    </td>
+                    <td>
+                        <p>เข้าถึงหน้า HTML ทั้งหมด</p>
+                    </td>
+                    <td>
+                        <p>document.getElementById("A").innerHTML = "Plug";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>getElementById</p>
+                    </td>
+                    <td>
+                        <p>รับ id จาก tag html เข้ามาทำงาน</p>
+                    </td>
+                    <td>
+                        <p>document.getElementById("A").innerHTML = "plug";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>querySelector</p>
+                    </td>
+                    <td>
+                        <p>รับ class จาก tag html เข้ามาทำงาน</p>
+                        <p>จะมาผลแค่ class ตัวแรกเท่านั้น</p>
+                    </td>
+                    <td>
+                        <p>document.querySelector(".A").innerHTML = "plug";</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>querySelectorAll</p>
+                    </td>
+                    <td class="text-center">
+                        <p>รับ class เดียวกันมาเก็บที่ตัวแปร</p>
+                        <p>"จำเป็นที่จะต้องสร้างตัวแปรเพื่อเก็บ class แล้ว get เอาข้อมูลแบบ array"</p>
+                    </td>
+                    <td>
+                        <p>let A = document.querySelectorAll(.A);</p>
+                        <p>for (let i = 0 ; i < A.length ; i++){</p>
+                        <p class="indent">A[i].innerHTML = "plug";</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>.src</p>
+                    </td>
+                    <td>
+                        <p>JavaScript สามารถเปลี่ยนค่าแอตทริบิวต์ HTML</p>
+                    </td>
+                    <td>
+                        <p>document.getElementById("A").src = "on.png";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>.style</p>
+                    </td>
+                    <td>
+                        <p>JavaScript สามารถเปลี่ยนรูปแบบ HTML (CSS)</p>
+                    </td>
+                    <td>
+                        <p>document.getElementById("A").style.fontSize = "4px";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>.innerHTML</p>
+                    </td>
+                    <td>
+                        <p>เขียน text ลงใน tag element</p>
+                    </td>
+                    <td>
+                        <p>document.getElementById("A").innerHTML = "plug";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>document.write()</p>
+                    </td>
+                    <td>
+                        <p>เขียนเนื้อหาลงหน้า HTML <br> <q>ห้ามเรียกใช้หลังจากหน้า HTML โหลดสร็จแล้วถ้าเรียกใช้จะเป็นการลบหน้า HTML ทั้งหมด</q></p>
+                    </td>
+                    <td>
+                        <p>document.write(4 + 4);</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>window.alert</p>
+                    </td>
+                    <td>
+                        <p>จะมีกล่องข้อความขึ้นมาตอนโหลดหน้าเว็บเสร็จ</p>
+                    </td>
+                    <td>
+                        <p>window.alert("plug");</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>console.log()</p>
+                    </td>
+                    <td>
+                        <p>output ข้อมูลที่ Console</p>
+                    </td>
+                    <td>
+                        <p>console.log(4+4)</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>window.print()</p>
+                    </td>
+                    <td>
+                        <p>สั่ง print หน้าเว็บที่ printer <br> <q>ควรวางไว้ที่ tag ที่ต้องการ click for print</q></p>
+                    </td>
+                    <td>
+                        <p><b>onclick = "window.print()"</b></p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>//</p>
+                    </td>
+                    <td>
+                        <p>comment one line</p>
+                    </td>
+                    <td>
+                        <p>// i love html css js </p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>/* */</p>
+                    </td>
+                    <td>
+                        <p>multi line comment</p>
+                    </td>
+                    <td>
+                        <p>/* love <br> you */</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>let</p>
+                    </td>
+                    <td>
+                        <p>ประกาศตัวแปลทั่วไป</p>
+                    </td>
+                    <td>
+                        <p>let x = 10;</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>const</p>
+                    </td>
+                    <td>
+                        <p>ประกาศตัวแปลค่าคงที่</p>
+                    </td>
+                    <td>
+                        <p>const X = 10;</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td></td>
+                    <td>
+                        <p>การต่อ string</p>
+                    </td>
+                    <td>
+                        <p>let s = "love" + " " + "you";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td></td>
+                    <td>
+                        <p>ถ้า string อยู่ข้างหน้าตัวหลังจะถูกนำมาต่อกัน</p>
+                    </td>
+                    <td>
+                        <p>console.log("5" + 1 + 2);</p>
+                        <p><q>output: 512;</q></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.length</p>
+                    </td>
+                    <td class="text-center">
+                        <p>นับ string</p>
+                    </td>
+                    <td>
+                        <p>let A = "ilovejs";</p>
+                        <p>let B = "A.length;"</p>
+                        <p>console.log(B);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.slice()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>get เอา string บางส่วน</p>
+                    </td>
+                    <td>
+                        <p>let str = "i love js";</p>
+                        <p>console.log(str.slice(2,9));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.replace()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>แทนที่ string จะแทนที่ string ที่เห็นตำแหน่งแรกเท่านั้น</p>
+                    </td>
+                    <td>
+                        <p>let str = (i love js);</p>
+                        <p>console.log(str.replace("js","you"));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.replaceAll()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>แทนที่ string ถ้า string เหมือนกันจะถูกแทนที่ทั้งหมด</p>
+                    </td>
+                    <td>
+                        <p>let str = "HTML,HTML";</p>
+                        <p>console.log(str.replaceAll("HTML","JS"));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.toUpperCsse()</p>
+                        <p>.toLowerCase()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>แปลงข้อความเป็น ตัวใหญ่ และ เล็ก</p>
+                    </td>
+                    <td>
+                        <p>let str = "i love js"</p>
+                        <p>console.log(str.toUpperCase());</p>
+                        <p>console.log(str.toLowerCase());</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.padStart()</p>
+                        <p>.padEnd()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>เพิ่มข้อมูลที่กำหนดไปไว้ด้าน หน้า และ หลัง string <br> datatype ต้องเป็น string เท่านั้น</p>
+                    </td>
+                    <td>
+                        <p>let str1 = "x";</p>
+                        <p>console.log(str1.padStrat(5,4));</p>
+                        <p>let str2 = 4;</p>
+                        <p>console.log(str2.toString().padEnd(4,"x"));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.charCodeAt()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>unicode ของ string หรือ รหัส ascii</p>
+                    </td>
+                    <td>
+                        <p>let str = "A";</p>
+                        <p>console.log(str.charCodeAt(0));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.indexOf()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>หา index ของ string ถ้า string เหมือนกันจะหาแค่ตำแหน่งแรก</p>
+                    </td>
+                    <td>
+                        <p>let str = "js js";</p>
+                        <p>console.log(str.indexOf("js"));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.lastIndexOf()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>หา index ของ string ถ้า string เหมือนกันจะหาแค่ตำแหน่งสุดท้าย</p>
+                    </td>
+                    <td>
+                        <p>let str = "js js";</p>
+                        <p>console.log(str.lastIndexOf("js"));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.matchaAll()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>หา string ที่เหมือนกัน ตัวแปรที่เก็บจะเป็น array</p>
+                        <p>"ต้องสร้างตัวแปรเพื่อเก็บ"</p>
+                    </td>
+                    <td>
+                        <p>let str = "you you";</p>
+                        <p>let array = str.matchAll("you");</p>
+                        <p>console.log(array[0]);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.includes()</p>
+                    </td>
+                    <td class="text-center"> 
+                        <p>ตรวจสอบ string ที่กำหนดเป็นสมาชิกตัวแปร string หรือไม่ </p>
+                    </td>
+                    <td>
+                        <p>let str = "i love js";</p>
+                        <p>console.log(str.includes("js"))</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>+,-,*,**,/,%,++,--</p>
+                    </td>
+                    <td class="text-center">
+                        <p>operator</p>
+                    </td>
+                    <td>
+                        <p>let x = 5; <br> let y = 5; <br> let z1 = x + y; <br>
+                        let z2 = x - y; <br> let z3 = x * y; <br> let z4 = x ** y; <br>
+                        let z5 = x / y; <br> let z6 = x % y; <br> let z7 = ++x; <br>
+                        let z8 = --y;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>+=,-=</p>
+                    </td>
+                    <td class="text-center">
+                        <p>ตัวแปร บวกค่า,ลบค่า ให้ตัวเอง</p>
+                    </td>
+                    <td>
+                        <p>let x = 5; <br> x += 5; <br> console.log(x);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>typeof()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>data type</p>
+                    </td>
+                    <td>
+                        <p>let A = 80;</p>
+                        <p>console.log(typeof(A));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p><q>js function</q></p>
+                    </td>
+                    <td class="text-center">
+                        <p>ส่งข้อมูลให้ function ทำงานเมื่อมีข้อมูลที่ต้องคำนวณซ้ำๆ</p>
+                    </td>
+                    <td>
+                        <p>function sumnumber(a,b) {</p>
+                        <p class="indent">let sum = a + b;</p>
+                        <p class="indent">return(sum);</p>
+                        <p>}</p>
+                        <p>console.log(sumnumber(80,80))</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p><q>js object</q></p>
+                    </td>
+                    <td class="text-center">
+                        <p>ประเพศตัวแปรที่รวมกันในตัวแปรหลัก ตัวแปรจะมีความเป็นระเบียบมากขึ้น</p>
+                    </td>
+                    <td>
+                        <p>const car = {</p>
+                        <p class="indent">carname: "bmw";</p>
+                        <p class="indent">model: "z4";</p>
+                        <p class="indent">price: "4000000";</p>
+                        <p>}</p>
+                        <p>console.log(car.carname);</p>
+                    </td>
+                </tr>
+            </table>
+    </section>
+
+    <script src="style.js"></script>
+    
+</body>
+</html>

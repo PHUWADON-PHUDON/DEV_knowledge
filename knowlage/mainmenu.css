@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    height: 100vh;
+    background: linear-gradient(-45deg, rgb(128, 151, 235),rgb(255, 0, 238));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main>h1{
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    color: rgb(233, 209, 209);
+    font-size: 5vw;
+    text-shadow: 0px 0px 20px rgb(248, 87, 0);
+}
+
+section{
+    position: relative;
+    border-radius: 20px;
+    width: 90%;
+    height: 500px;
+    box-shadow: 0px 0px 40px rgb(128, 126, 128);
+    background-color: rgb(255, 255, 255,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section>a{
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+section>a>div{
+    width: 180px;
+    border-radius: 20%;
+    background: linear-gradient(90deg, rgb(128, 151, 235),rgb(255, 0, 238));
+    height: 200px;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0,0.5);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section>a>div:hover{
+    box-shadow: 0px 20px 10px rgb(0, 0, 0,0.5);
+    transform: scale(1.1,1.2);
+}
+
+section>a>div>img{
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+section>a>div>h1{
+    text-shadow: 0px 0px 8px #fff;
+}
+
+section>img{
+    position: absolute;
+}
+
+section>img:nth-of-type(1){
+    top: -96px;
+    left: -73px;
+    transform: rotate(-16deg);
+    width: 10%;
+}
+
+section>img:nth-of-type(2){
+    bottom: 10px;
+    right: 56px;
+    transform: rotate(-16deg);
+    width: 10%;
+}
+
+section>img:nth-of-type(3){
+    bottom: 0px;
+    left: 40px;
+    width: 10%;
+}
+
+section>img:nth-of-type(4){
+    top: -60px;
+    right: -10px;
+    transform: rotate(-90deg);
+    width: 10%;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+
+    main{
+        height: auto;
+    }
+
+
+    main>h1{
+        margin-top: 20px;
+    }
+
+
+    main>h1{
+        font-size: 6vw;
+    }
+
+
+    section{
+        height: auto;
+        flex-direction: column;
+    }
+
+    section>a>div:hover{
+        transform: scale(1.1,1.1);
+    }
+}
