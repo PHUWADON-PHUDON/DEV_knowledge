@@ -74,8 +74,6 @@ p{
 
 table{
     margin-top: 15px;
-    width: 100%;
-    border: 1px solid black;
     border-collapse: collapse;
 }
 
@@ -86,7 +84,7 @@ th{
 }
 
 td{
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     letter-spacing: 1px;
     background-color: rgb(244, 228, 13,0.2);
 }
@@ -95,7 +93,6 @@ th,td{
     width: 33.33%;
     border: 1px solid rgb(255, 255, 255);
 }
-
 
 
 
@@ -120,16 +117,26 @@ th,td{
 
     td{
         padding-top: 20px;
-        padding-left: 5px;
-    }
-
-    p{
-        font-size: px;
     }
 }
 
 @media screen and (max-width: 565px) {
     p{
         font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    td{
+        padding: 10px 10px 10px 10px;
+    }
+
+    section{
+        padding: 0;
+        margin: 30px auto 0 auto;
+        border-radius: 4px;
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
+        border: 2px solid transparent;
     }
 }
