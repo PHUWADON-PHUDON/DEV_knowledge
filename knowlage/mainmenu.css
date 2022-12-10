@@ -15,6 +15,7 @@ main{
 }
 
 main>h1{
+    text-align: center;
     margin-bottom: 60px;
     text-transform: uppercase;
     color: rgb(233, 209, 209);
@@ -100,7 +101,19 @@ section>img:nth-of-type(4){
 }
 
 
+@media screen and (max-width: 800px){
 
+    section{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 732px){
+
+    main{
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 600px){
 
