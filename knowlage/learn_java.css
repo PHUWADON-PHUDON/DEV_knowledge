@@ -82,14 +82,18 @@ th{
 }
 
 td{
-    padding: 20px;
+    padding: 10px;
     letter-spacing: 1px;
-    background-color: rgba(120, 214, 245,0.2);
+    background-color: rgba(249, 104, 96, 0.2);
 }
 
 th,td{
     width: 33.33%;
     border: 1px solid rgb(255, 255, 255);
+}
+
+.indent{
+    text-indent: 15px;
 }
 
 
