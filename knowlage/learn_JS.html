@@ -220,6 +220,7 @@
                         <p>.length</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>number</q></p>
                         <p>นับ string</p>
                     </td>
                     <td>
@@ -233,6 +234,7 @@
                         <p>.slice()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>string</q></p>
                         <p>get เอา string บางส่วน</p>
                     </td>
                     <td>
@@ -245,6 +247,7 @@
                         <p>.replace()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>string</q></p>
                         <p>แทนที่ string จะแทนที่ string ที่เห็นตำแหน่งแรกเท่านั้น</p>
                     </td>
                     <td>
@@ -257,6 +260,7 @@
                         <p>.replaceAll()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>string</q></p>
                         <p>แทนที่ string ถ้า string เหมือนกันจะถูกแทนที่ทั้งหมด</p>
                     </td>
                     <td>
@@ -270,6 +274,7 @@
                         <p>.toLowerCase()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>string</q></p>
                         <p>แปลงข้อความเป็น ตัวใหญ่ และ เล็ก</p>
                     </td>
                     <td>
@@ -284,6 +289,7 @@
                         <p>.padEnd()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>string</q></p>
                         <p>เพิ่มข้อมูลที่กำหนดไปไว้ด้าน หน้า และ หลัง string <br> datatype ต้องเป็น string เท่านั้น</p>
                     </td>
                     <td>
@@ -298,6 +304,7 @@
                         <p>.charCodeAt()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>number</q></p>
                         <p>unicode ของ string หรือ รหัส ascii</p>
                     </td>
                     <td>
@@ -307,9 +314,25 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>.split()</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>array string</q></p>
+                        <p>ตัด string ที่กำหนด</p>
+                        <p><q>ตัวแปรที่ใช้ split จะเป็น array</q></p>
+                    </td>
+                    <td>
+                        <p>let str = "a,b,c";</p>
+                        <p>let A = str.split(",");</p>
+                        <p>console.log (A);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>.indexOf()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>number</q></p>
                         <p>หา index ของ string ถ้า string เหมือนกันจะหาแค่ตำแหน่งแรก</p>
                     </td>
                     <td>
@@ -322,6 +345,7 @@
                         <p>.lastIndexOf()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>string</q></p>
                         <p>หา index ของ string ถ้า string เหมือนกันจะหาแค่ตำแหน่งสุดท้าย</p>
                     </td>
                     <td>
@@ -334,6 +358,7 @@
                         <p>.matchAll()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>array string</q></p>
                         <p>หา string ที่เหมือนกัน ตัวแปรที่เก็บจะเป็น array</p>
                         <p>"ต้องสร้างตัวแปรเพื่อเก็บ"</p>
                     </td>
@@ -348,11 +373,38 @@
                         <p>.includes()</p>
                     </td>
                     <td class="text-center"> 
-                        <p>ตรวจสอบ string ที่กำหนดเป็นสมาชิกตัวแปร string หรือไม่ </p>
+                        <p class="return"><q>bool</q></p>
+                        <p>ตรวจสอบ string ที่กำหนดเป็นสมาชิกตัวแปร string หรือไม่</p>
                     </td>
                     <td>
                         <p>let str = "i love js";</p>
-                        <p>console.log (str.includes("js"))</p>
+                        <p>console.log (str.includes("love"));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.startsWith()</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>bool</q></p>
+                        <p>ตรวจสอบ string ที่กำหนดเป็นสมาชิกตัวแปร string หรือไม่</p>
+                    </td>
+                    <td>
+                        <p>let str = "i love js";</p>
+                        <p>console.log (str.startsWith("i"));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.endsWith()</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>bool</q></p>
+                        <p>ตรวจสอบ string ที่กำหนดเป็นสมาชิกตัวแปร string หรือไม่</p>
+                    </td>
+                    <td>
+                        <p>let str = "i love js";</p>
+                        <p>console.log (str.endsWith("js");</p>
                     </td>
                 </tr>
                 <tr>
