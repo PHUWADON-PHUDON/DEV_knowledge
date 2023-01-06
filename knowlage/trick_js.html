@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHUWADON</title>
+    <script src="https://kit.fontawesome.com/9cb18605d1.js" crossorigin="anonymous"></script>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header{
+            position: relative;
+            height: 50px;
+            background-color: rgb(244, 228, 13);
+            display: flex;
+            align-items: center;
+        }
+
+        header i{
+            margin-left: 20px;
+            font-size: 25px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: all 0.2s;
+        }
+        header i:hover{
+            color: #fff;
+        }
+
+        header h2{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+            color: #fff;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.285);
+        }
+
+        .darkclick{
+            background-color: #000;
+        }
+
+        section{
+            margin: 100px auto 0 auto;
+        }
+
+        section >p{
+            margin: 0 auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            width: 500px;
+            padding: 15px 0;
+            border-radius: 2px;
+            color: #fff;
+            background-color: rgb(244, 228, 13);
+            transition: all .2s;
+        }
+        section >p:hover{
+            box-shadow: 0 0 10px rgb(244, 228, 13);
+        }
+
+        section >div{
+            display: none;
+        }
+        section >div>img{
+            display: block;
+            margin: 40px auto;
+            width: 500px;
+            height: 400px;
+        }
+
+        .trick1_show{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="mainmenu.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <i class="fa-solid fa-sun dark"></i>
+        <h2>JS TRICK</h2>
+    </header>
+
+    <section>
+        <p id="click_trick1">SLIDE IMG</p>
+        <div id="trick1">
+            <img src="htmlT1.jpg" alt="">
+            <img src="cssT1.jpg" alt="">
+            <img src="jsT1.jpg" alt="">
+        </div>
+    </section>
+
+    <script>
+
+        let dark = document.querySelector(".dark");
+        dark.addEventListener("click",() => {
+            document.body.classList.toggle("darkclick");
+        });
+
+        let click_trick1 = document.getElementById("click_trick1");
+        let trick1 = document.getElementById("trick1");
+        click_trick1.addEventListener("click",() => {
+            trick1.classList.toggle("trick1_show");
+        });
+
+    </script>
+    
+</body>
+</html>
