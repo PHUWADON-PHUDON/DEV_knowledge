@@ -30,7 +30,7 @@ main {
       object-fit: cover;
       z-index: -1; }
   main section {
-    background-image: linear-gradient(45deg, #ff617b, violet);
+    background: linear-gradient(-45deg, #8097eb, #ff00ee);
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -46,7 +46,8 @@ main {
       border-radius: 10px;
       margin: 40px;
       transition: all 0.5s ease;
-      background-image: linear-gradient(-45deg, #fb2c25, #4037f0); }
+      background: linear-gradient(-45deg, #8097eb, #ff00ee);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.773); }
       main section > div a {
         text-decoration: none; }
         main section > div a h1 {
