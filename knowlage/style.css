@@ -16,7 +16,7 @@ h6{
 
 
 main{
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 690px;
 }
 
@@ -29,7 +29,7 @@ table{
 tr:nth-of-type(1){
     position: sticky;
     top: 0px;
-    background-color: #000;
+    background-color: #006abe;
     color: #fff;
 }
 
@@ -51,126 +51,29 @@ td,th{
     margin-top: 50px;
     position: sticky;
     top: 45px;
-    background-color: #000;
+    background-color: #006abe;
     color: #fff;
 }
 
-.dark-mode{
-    margin: 10px 15px;
-    width: 150px;
+header{
+    height: 50px;
+    background-color: #006abe;
     display: flex;
-    column-gap: 12px;
     align-items: center;
 }
 
-/* sun */
-
-.dark-mode>div>div:nth-of-type(1){
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translate(-50%,0);
-    width: 3px;
-    height: 6px;
-    border: 1px solid black;
-}
-
-.dark-mode>div>div:nth-of-type(2){
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: translate(0,-50%) rotate(90deg);
-    width: 3px;
-    height: 6px;
-    border: 1px solid black;
-}
-
-.dark-mode>div>div:nth-of-type(3){
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translate(0,-50%) rotate(90deg);
-    width: 3px;
-    height: 6px;
-    border: 1px solid black;
-}
-
-.dark-mode>div>div:nth-of-type(4){
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translate(-50%,0);
-    width: 3px;
-    height: 6px;
-    border: 1px solid black;
-}
-
-.dark-mode>div{
-    position: relative;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    border: 1px solid #000;
-    transition: all 0.3s ease;
-}
-.dark-mode:hover>div,.dark-mode:hover>div>div{
-    background-color: #000;
-}
-
-.dark-mode>a>h2{
-    transform: translate(-100%,0);
-    transition: all 0.3s ease;
-}
-.dark-mode:hover>a>h2{
-    transform: translate(0,0);
-}
-
-.dark-mode>a{
-    overflow: hidden;
-    display: inline-block;
-    opacity: 0;
-    text-decoration: none;
-    color: #000;
-    transition: all 0.3s ease;
-}
-.dark-mode:hover>a{
-    opacity: 1;
-}
-
-.dark-mode::after{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    content: "";
-    z-index: -1;
-}
-
-.home{
-    width: 80px;
-    margin-left: 10px;
+header i{
+    margin-left: 20px;
     font-size: 25px;
-}
-
-.home>a{
-    display: inline-block;
     text-decoration: none;
-    color: #000;
-    display: flex;
-    align-items: center;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+header i:hover{
+    color: #fff;
 }
 
-.home>a>div{
-    overflow: hidden;
-}
-
-.home>a>div>h2{
-    font-weight: 600;
-    font-size: 14px;
-    transform: translate(-100%,0);
-    transition: all 0.3s ease;
-}
-.home:hover>a>div>h2{
-    transform: translate(0,0);
+.click_dark{
+    background-color: #000;
+    color: #fff;
 }

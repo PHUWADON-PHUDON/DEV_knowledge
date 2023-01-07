@@ -5,29 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHUWADON</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9cb18605d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="dark-mode">
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <a href="learn_css2.html"><h2>darkmode</h2></a>
-    </div>
-
-    <div class="home">
+    <header>
         <a href="mainmenu.html">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            <div>
-                <h2>home</h2>
-            </div>
+            <i class="fa-solid fa-house"></i>
         </a>
-    </div>
+        <i class="fa-solid fa-sun dark"></i>
+    </header>
 
     <main>
 
@@ -1235,6 +1223,13 @@
         </table>
 
     </main>
+
+    <script>
+        let dark = document.querySelector(".dark");
+        dark.addEventListener("click",() => {
+            document.body.classList.toggle("click_dark");
+        });
+    </script>
 
 </body>
 </html>
