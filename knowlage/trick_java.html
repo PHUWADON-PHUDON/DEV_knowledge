@@ -47,7 +47,7 @@
         }
 
         section{
-            margin: 100px auto 0 auto;
+            margin: 100px auto 100px auto;
         }
 
         section >p{
@@ -113,6 +113,20 @@
         </div>
     </section>
 
+    <section>
+        <p id="click_trick4">STRUCTURE OF GUI AND JFRAME IS A SUPERCLASS</p>
+        <div id="trick4">
+            <img src="javaT4.jpg" alt="">
+        </div>
+    </section>
+
+    <section>
+        <p id="click_trick5">STRUCTURE OF GUI AND GRAPHICS</p>
+        <div id="trick5">
+            <img src="javaT5.jpg" alt="">
+        </div>
+    </section>
+
     <script>
 
         let dark = document.querySelector(".dark");
@@ -136,6 +150,18 @@
         let trick3 = document.getElementById("trick3");
         click_trick3.addEventListener("click",() => {
             trick3.classList.toggle("trick1_show");
+        });
+
+        let click_trick4 = document.getElementById("click_trick4");
+        let trick4 = document.getElementById("trick4");
+        click_trick4.addEventListener("click",() => {
+            trick4.classList.toggle("trick1_show");
+        });
+
+        let click_trick5 = document.getElementById("click_trick5");
+        let trick5 = document.getElementById("trick5");
+        click_trick5.addEventListener("click",() => {
+            trick5.classList.toggle("trick1_show");
         });
 
     </script>
