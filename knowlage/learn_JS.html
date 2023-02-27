@@ -42,7 +42,7 @@
                 </tr>
                 <tr class="text-center">
                     <td>
-                        <p>getElementById</p>
+                        <p>.getElementById()</p>
                     </td>
                     <td>
                         <p>รับ id จาก tag html เข้ามาทำงาน</p>
@@ -53,7 +53,7 @@
                 </tr>
                 <tr class="text-center">
                     <td>
-                        <p>querySelector</p>
+                        <p>.querySelector()</p>
                     </td>
                     <td>
                         <p>รับ class จาก tag html เข้ามาทำงาน</p>
@@ -65,7 +65,7 @@
                 </tr>
                 <tr>
                     <td class="text-center">
-                        <p>querySelectorAll</p>
+                        <p>.querySelectorAll()</p>
                     </td>
                     <td class="text-center">
                         <p>รับ class เดียวกันมาเก็บที่ตัวแปร</p>
@@ -76,6 +76,44 @@
                         <p>for (let i = 0 ; i < A.length ; i++){</p>
                         <p class="indent">A[i].innerHTML = "plug";</p>
                         <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.classList.toggle()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>เพิ่ม class css เข้าไปทำงานใน tag ที่กำหนด</p>
+                        <p>กดครั้งแรกจะเพิ่ม class</p>
+                        <p>กดครั้งทที่สองจะลบ class</p>
+                    </td>
+                    <td>
+                        <p>let A = document. getElementById("A");</p>
+                        <p>A.classList.toggle("S")</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.classList.add()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>เพิ่ม class css เข้าไปทำงานใน tag ที่กำหนด</p>
+                    </td>
+                    <td>
+                        <p>let A = document. getElementById("A");</p>
+                        <p>A.classList.add("S")</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.classList.remove()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>ลบ class css ที่เพิ่มให้ tag ที่กำหนด</p>
+                    </td>
+                    <td>
+                        <p>let A = document. getElementById("A");</p>
+                        <p>A.classList.remove("S")</p>
                     </td>
                 </tr>
                 <tr class="text-center">
@@ -91,7 +129,7 @@
                 </tr>
                 <tr class="text-center">
                     <td>
-                        <p>.style</p>
+                        <p>.style.</p>
                     </td>
                     <td>
                         <p>JavaScript สามารถเปลี่ยนรูปแบบ HTML (CSS)</p>
@@ -525,6 +563,32 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>for()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>วน loop กำหนดรอบ</p>
+                    </td>
+                    <td>
+                        <p>for(let i = 0 ; i < 10 ; i++) {</p>
+                        <p class="indent">console.log("A");</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>while()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>วน loop ไม่กำหนดรอบ</p>
+                    </td>
+                    <td>
+                        <p>while(true) {</p>
+                        <p class="indent">console.log("A");</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p><q>array</q></p>
                     </td>
                     <td class="text-center">
@@ -532,6 +596,20 @@
                     </td>
                     <td>
                         <p>let n = [100,200,300];</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.forEach()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>วน loop array</p>
+                    </td>
+                    <td>
+                        <p>let n = [100,200,300];</p>
+                        <p>array.forEach(n => {</p>
+                        <p class="indent">console.log(n);</p>
+                        <p>});</p>
                     </td>
                 </tr>
                 <tr>
