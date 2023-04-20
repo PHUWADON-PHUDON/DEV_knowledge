@@ -563,6 +563,63 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>localStorage.setItem()</p>
+                        <p>sessionStorage.setItem()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>บันทึกข้อมูลลงใน browser แบบถางร</p>
+                        <p>บันทึกข้อมูลลงใน browser แบบชั่วคราว</p>
+                    </td>
+                    <td>
+                        <p>localStorage.setItem("key1",4);</p>
+                        <p>sessionStorage.setItem("key2",8);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>localStorage.getItem()</p>
+                        <p>sessionStorage.getItem()</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>string</q></p>
+                        <p>ดึงข้อมูลที่เก็บแบบถาวรใน browser</p>
+                        <p>ดึงข้อมูลที่เก็บแบบชั่วคราวใน browser</p>
+                    </td>
+                    <td>
+                        <p>let n = localStorage.getItem("key1");</p>
+                        <p>let m = sessionStorage.getItem("key2");</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>localStorage.removeItem();</p>
+                        <p>sessionStorage.removeItem();</p>
+                    </td>
+                    <td class="text-center">
+                        <p>ลบข้อมูลที่เก็บแบบถาวรใน browser</p>
+                        <p>ลบข้อมูลที่เก็บแบบชั่วคราวใน browser</p>
+                    </td>
+                    <td>
+                        <p>localStorage.removeItem("key1");</p>
+                        <p>sessionStorage.removeItem("key2");</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>isNaN()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>ตรวจสอบตัวแปร number มีค่าว่างหรือไม่</p>
+                    </td>
+                    <td>
+                        <p>let n = 10;</p>
+                        <p>if(isNaN(n)){</p>
+                        <p class="indent">console.log("true");</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>for()</p>
                     </td>
                     <td class="text-center">
@@ -669,9 +726,87 @@
                     </td>
                 </tr>
             </table>
+            
+            <div class="style_event_btn">
+                <h1 class="title">.addEventListener()</h1>
+                <div class="style_event_con">
+                    <table>
+                        <tr class="text-center" style="color: red;">
+                            <td>
+                                <p>.addEventListener</p>
+                            </td>
+                            <td>
+                                <p>( "event" ,</p>
+                            </td>
+                            <td>
+                                <p> function )</p>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>
+                                <p>"selectorName"</p>
+                            </td>
+                            <td>
+                                <p><ins>MOUSE EVENT</ins></p>
+                                <br>
+                                <p>click,mouseover,mouseout</p>
+                            </td>
+                            <td>
+                                <p>() => {} or FunctionName</p>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>
+                                <p>"document"</p>
+                            </td>
+                            <td>
+                                <p><ins>KEY EVENT</ins></p>
+                                <br>
+                                <p>keyup,keydown</p>
+                                <br>
+                                <p>EX. if(event.key === "a"){}</p>
+                            </td>
+                            <td>
+                                <p>(event) => {} or FunctionName</p>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>
+                                <p>"window"</p>
+                            </td>
+                            <td>
+                                <p><ins>SCROLL EVENT</ins></p>
+                                <br>
+                                <p>scroll</p>
+                                <br>
+                                <p>EX. console.log(window.scrollY)</p>
+                            </td>
+                            <td>
+                                <p>() => {} or FunctionName</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
     </section>
 
-    <script src="style.js"></script>
+    <script>
+        let title = document.querySelector(".title");
+        let style_event_con = document.querySelector(".style_event_con");
+
+        const Dark = document.querySelector(".dark");
+        Dark.onclick=()=>{
+            const tap = document.querySelector("body")
+            tap.classList.toggle("dark2");
+            const Tap = document.querySelector("section");
+            Tap.classList.toggle("dark2");
+            style_event_con.classList.toggle("dark2");
+        }
+
+        title.addEventListener("click",() => {
+            style_event_con.classList.toggle("eventshow");
+        })
+    </script>
     
 </body>
 </html>

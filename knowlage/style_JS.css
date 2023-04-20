@@ -78,6 +78,7 @@ p{
 }
 
 table{
+    width: 100%;
     margin-top: 15px;
     border-collapse: collapse;
 }
@@ -99,7 +100,31 @@ th,td{
     border: 1px solid rgb(255, 255, 255);
 }
 
+.style_event_btn{
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f4e40d;
+}
 
+.title{
+    margin: 0 0 0 0;
+    color: #2f59d1;
+}
+
+.style_event_con{
+    bottom: -200px;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    transition: all .2s;
+    overflow: hidden;
+}
+
+.eventshow{
+    margin-top: 5px;
+    height: 450px;
+}
 
 /* responsive */
 @media screen and (max-width: 1130px) {
