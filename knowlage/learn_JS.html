@@ -199,17 +199,6 @@
                 </tr>
                 <tr class="text-center">
                     <td>
-                        <p>window.alert</p>
-                    </td>
-                    <td>
-                        <p>จะมีกล่องข้อความขึ้นมาตอนโหลดหน้าเว็บเสร็จ</p>
-                    </td>
-                    <td>
-                        <p>window.alert("plug");</p>
-                    </td>
-                </tr>
-                <tr class="text-center">
-                    <td>
                         <p>console.log()</p>
                     </td>
                     <td>
@@ -221,6 +210,17 @@
                 </tr>
                 <tr class="text-center">
                     <td>
+                        <p>window.alert</p>
+                    </td>
+                    <td>
+                        <p>จะมีกล่องข้อความขึ้นมาตอนโหลดหน้าเว็บเสร็จ</p>
+                    </td>
+                    <td>
+                        <p>window.alert("plug");</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
                         <p>window.print()</p>
                     </td>
                     <td>
@@ -228,6 +228,17 @@
                     </td>
                     <td>
                         <p><b>onclick = "window.print()"</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>window.location.href</p>
+                    </td>
+                    <td class="text-center">
+                        <p>ลิ้งไปหน้าใหม่</p>
+                    </td>
+                    <td>
+                        <p>window.location.href = "A.html";</p>
                     </td>
                 </tr>
                 <tr>
@@ -642,6 +653,28 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>setInterval()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>โค้ดทำงานซ้ำๆตามเวลาที่กำหนด</p>
+                    </td>
+                    <td>
+                        <p>let A = setInterval(func,1000);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>setTimeout()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>โค้ดทำงานครั้งเดียวตามเวลาที่กำหนด</p>
+                    </td>
+                    <td>
+                        <p>let A = setTimeout(func,1000);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>localStorage.setItem()</p>
                         <p>sessionStorage.setItem()</p>
                     </td>
@@ -758,7 +791,7 @@
                     </td>
                     <td>
                         <p>let n = [100];</p>
-                        <p>n.push(200);</p>
+                        <p>n.unshift(200);</p>
                         <p>console.log(n);</p>
                     </td>
                 </tr>
