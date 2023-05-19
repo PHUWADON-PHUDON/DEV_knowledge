@@ -48,6 +48,7 @@
 
         section{
             margin: 100px auto 0 auto;
+            cursor: pointer;
         }
 
         section >p{
@@ -76,7 +77,7 @@
             height: 400px;
         }
 
-        .trick1_show{
+        .trick_show{
             display: block;
         }
 
@@ -110,6 +111,16 @@
         </div>
     </section>
 
+    <section>
+        <p id="click_trick3">SLIDE IMG LOOP</p>
+        <div id="trick3">
+            <img src="htmlT3.jpg" alt="">
+            <img src="cssT3.jpg" alt="">
+            <img src="jsT3_1.jpg" alt="">
+            <img src="jsT3_2.jpg" alt="">
+        </div>
+    </section>
+
     <script>
 
         let dark = document.querySelector(".dark");
@@ -120,13 +131,19 @@
         let click_trick1 = document.getElementById("click_trick1");
         let trick1 = document.getElementById("trick1");
         click_trick1.addEventListener("click",() => {
-            trick1.classList.toggle("trick1_show");
+            trick1.classList.toggle("trick_show");
         });
 
         let click_trick2 = document.getElementById("click_trick2");
         let trick2 = document.getElementById("trick2");
         click_trick2.addEventListener("click",() => {
-            trick2.classList.toggle("trick1_show");
+            trick2.classList.toggle("trick_show");
+        });
+
+        let click_trick3 = document.getElementById("click_trick3");
+        let trick3 = document.getElementById("trick3");
+        click_trick3.addEventListener("click",() => {
+            trick3.classList.toggle("trick_show");
         });
 
     </script>
