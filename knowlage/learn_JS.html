@@ -210,7 +210,7 @@
                 </tr>
                 <tr class="text-center">
                     <td>
-                        <p>window.alert</p>
+                        <p>window.alert()</p>
                     </td>
                     <td>
                         <p>จะมีกล่องข้อความขึ้นมาตอนโหลดหน้าเว็บเสร็จ</p>
@@ -564,7 +564,7 @@
                         <p>.lastIndexOf()</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>string</q></p>
+                        <p class="return"><q>number</q></p>
                         <p>หา index ของ string ถ้า string เหมือนกันจะหาแค่ตำแหน่งสุดท้าย</p>
                     </td>
                     <td>
@@ -577,14 +577,14 @@
                         <p>.matchAll()</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>array string</q></p>
-                        <p>หา string ที่เหมือนกัน ตัวแปรที่เก็บจะเป็น array</p>
+                        <p class="return"><q>object</q></p>
+                        <p>หา string ที่เหมือนกัน</p>
                         <p>"ต้องสร้างตัวแปรเพื่อเก็บ"</p>
                     </td>
                     <td>
                         <p>let str = "you you";</p>
                         <p>let array = str.matchAll("you");</p>
-                        <p>console.log(array[0]);</p>
+                        <p>console.log(Array.from(array));</p>
                     </td>
                 </tr>
                 <tr>
