@@ -269,6 +269,19 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>.children</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object</q></p>
+                        <p>เก็บ element ลูก ของ element แม่</p>
+                    </td>
+                    <td>
+                        <p>let e = con.children;</p>
+                        <p>console.log(e);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>event.target.</p>
                     </td>
                     <td class="text-center">
@@ -297,15 +310,28 @@
                 </tr>
                 <tr>
                     <td class="text-center">
-                        <p>.children</p>
+                        <p>event.clienX</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>object</q></p>
-                        <p>เก็บ element ลูก ของ element แม่</p>
+                        <p>ระบุตำแหน่ง mouse แกน x</p>
                     </td>
                     <td>
-                        <p>let e = con.children;</p>
-                        <p>console.log(e);</p>
+                        <p>function mousex() {</p>
+                        <p class="indent">console.log(event.clienX);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>event.clienY</p>
+                    </td>
+                    <td class="text-center">
+                        <p>ระบุตำแหน่ง mouse แกน Y</p>
+                    </td>
+                    <td>
+                        <p>function mousey() {</p>
+                        <p class="indent">console.log(event.clienY);</p>
+                        <p>}</p>
                     </td>
                 </tr>
                 <tr class="text-center">
@@ -1074,7 +1100,7 @@
                             <td>
                                 <p><ins>MOUSE EVENT</ins></p>
                                 <br>
-                                <p>click,mouseover,mouseout</p>
+                                <p>click,mouseover,mouseout <br> mousemove</p>
                                 <p>dragstart,dragover,drop</p>
                             </td>
                             <td>
@@ -1103,7 +1129,7 @@
                             <td>
                                 <p><ins>SCROLL EVENT</ins></p>
                                 <br>
-                                <p>scroll</p>
+                                <p>scroll,mousemove</p>
                                 <br>
                                 <p>EX. console.log(window.scrollY)</p>
                             </td>
