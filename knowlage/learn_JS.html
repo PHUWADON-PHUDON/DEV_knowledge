@@ -45,6 +45,7 @@
                         <p>.getElementById()</p>
                     </td>
                     <td>
+                        <p class="return"><q>object</q></p>
                         <p>รับ id จาก tag html เข้ามาทำงาน</p>
                     </td>
                     <td>
@@ -56,6 +57,7 @@
                         <p>.querySelector()</p>
                     </td>
                     <td>
+                        <p class="return"><q>object</q></p>
                         <p>รับ class จาก tag html เข้ามาทำงาน</p>
                         <p>จะมีผลแค่ class ตัวแรกเท่านั้น</p>
                     </td>
@@ -68,6 +70,7 @@
                         <p>.querySelectorAll()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>object</q></p>
                         <p>รับ class เดียวกันมาเก็บที่ตัวแปร</p>
                         <p>"จำเป็นที่จะต้องสร้างตัวแปรเพื่อเก็บ class แล้ว get เอาข้อมูลแบบ array"</p>
                     </td>
@@ -83,6 +86,7 @@
                         <p>.createElement()</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>object</q></p>
                         <p>สร้าง tag html ขึ้นมาใหม่</p>
                     </td>
                     <td>
@@ -153,37 +157,20 @@
                         <p>A.classList.remove("S")</p>
                     </td>
                 </tr>
-                <tr class="text-center">
-                    <td>
-                        <p>.src</p>
+                <tr>
+                    <td class="text-center">
+                        <p>.getBoundingClientRect()</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object</q></p>
+                        <p>get เอาตำแหน่ง element</p>
+                        <p>ใช้กับ element เท่านั้น</p>
+                        <p>มี metthod</p>
+                        <p>x <br> y <br> top <br> left <br> right <br> bottom</p>
                     </td>
                     <td>
-                        <p>JavaScript สามารถเปลี่ยนค่าแอตทริบิวต์ HTML</p>
-                    </td>
-                    <td>
-                        <p>document. getElementById("A"). src = "on.png";</p>
-                    </td>
-                </tr>
-                <tr class="text-center">
-                    <td>
-                        <p>.style.</p>
-                    </td>
-                    <td>
-                        <p>JavaScript สามารถเปลี่ยนรูปแบบ HTML (CSS)</p>
-                    </td>
-                    <td>
-                        <p>document. getElementById("A"). style.fontSize = "4px";</p>
-                    </td>
-                </tr>
-                <tr class="text-center">
-                    <td>
-                        <p>.innerHTML</p>
-                    </td>
-                    <td>
-                        <p>เขียน text ลงใน tag element</p>
-                    </td>
-                    <td>
-                        <p>document. getElementById("A"). innerHTML = "plug";</p>
+                        <p>let po = p.getBoundingClientRect();</p>
+                        <p>console.log(po.x);</p>
                     </td>
                 </tr>
                 <tr class="text-center">
@@ -269,19 +256,6 @@
                 </tr>
                 <tr>
                     <td class="text-center">
-                        <p>.children</p>
-                    </td>
-                    <td class="text-center">
-                        <p class="return"><q>object</q></p>
-                        <p>เก็บ element ลูก ของ element แม่</p>
-                    </td>
-                    <td>
-                        <p>let e = con.children;</p>
-                        <p>console.log(e);</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-center">
                         <p>event.target.</p>
                     </td>
                     <td class="text-center">
@@ -332,6 +306,52 @@
                         <p>function mousey() {</p>
                         <p class="indent">console.log(event.clienY);</p>
                         <p>}</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>.src</p>
+                    </td>
+                    <td>
+                        <p>JavaScript สามารถเปลี่ยนค่าแอตทริบิวต์ HTML</p>
+                    </td>
+                    <td>
+                        <p>document. getElementById("A"). src = "on.png";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>.style.</p>
+                    </td>
+                    <td>
+                        <p>JavaScript สามารถเปลี่ยนรูปแบบ HTML (CSS)</p>
+                    </td>
+                    <td>
+                        <p>document. getElementById("A"). style.fontSize = "4px";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>.innerHTML</p>
+                    </td>
+                    <td>
+                        <p>เขียน text ลงใน tag element</p>
+                    </td>
+                    <td>
+                        <p>document. getElementById("A"). innerHTML = "plug";</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.children</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object</q></p>
+                        <p>เก็บ element ลูก ของ element แม่</p>
+                    </td>
+                    <td>
+                        <p>let e = con.children;</p>
+                        <p>console.log(e);</p>
                     </td>
                 </tr>
                 <tr class="text-center">
