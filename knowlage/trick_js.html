@@ -47,7 +47,7 @@
         }
 
         section{
-            margin: 100px auto 0 auto;
+            margin: 50px auto 50px auto;
             cursor: pointer;
         }
 
@@ -121,6 +121,13 @@
         </div>
     </section>
 
+    <section>
+        <p id="click_trick4">SCREENSHOT ELEMENT</p>
+        <div id="trick4">
+            <img style="width: auto; height: auto;" src="jsT4.jpg" alt="">
+        </div>
+    </section>
+
     <script>
 
         let dark = document.querySelector(".dark");
@@ -144,6 +151,12 @@
         let trick3 = document.getElementById("trick3");
         click_trick3.addEventListener("click",() => {
             trick3.classList.toggle("trick_show");
+        });
+
+        let click_trick4 = document.getElementById("click_trick4");
+        let trick4 = document.getElementById("trick4");
+        click_trick4.addEventListener("click",() => {
+            trick4.classList.toggle("trick_show");
         });
 
     </script>
