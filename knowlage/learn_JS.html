@@ -285,6 +285,7 @@
                         <p>event.target.</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>object</q></p>
                         <p>กำหนด event ที่ function</p>
                         <p>get เอาที่อยู่ element ที่ click</p>
                     </td>
@@ -313,6 +314,7 @@
                         <p>event.clienX</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>number</q></p>
                         <p>ระบุตำแหน่ง mouse แกน x</p>
                     </td>
                     <td>
@@ -326,11 +328,44 @@
                         <p>event.clienY</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>number</q></p>
                         <p>ระบุตำแหน่ง mouse แกน y</p>
                     </td>
                     <td>
                         <p>function mousey() {</p>
                         <p class="indent">console.log(event.clienY);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>event.target.files[0]</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object</q></p>
+                        <p>เข้าถึงข้อมูลไฟล์ที่อัปโหลดผ่าน element</p>
+                        <p>เช่น input type flie</p>
+                    </td>
+                    <td>
+                        <p>function infile(event) {</p>
+                        <p class="indent">let file = event.target.files[0];</p>
+                        <p class="indent">console.log(file);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>URL.createObjectURL()</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>string</q></p>
+                        <p>สร้าง url เพื่อเข้าถึง file</p>
+                    </td>
+                    <td>
+                        <p>function infile(event) {</p>
+                        <p class="indent">let file = event.target.files[0];</p>
+                        <p class="indent">let url = URL.createObjectURL(file);</p>
+                        <p class="indent">img.src = url;</p>
                         <p>}</p>
                     </td>
                 </tr>
@@ -1198,7 +1233,7 @@
                             <td>
                                 <p><ins>MOUSE EVENT</ins></p>
                                 <br>
-                                <p>click,mouseover,mouseout <br> mousemove</p>
+                                <p>click,mouseover,mouseout <br> mousemove,change</p>
                                 <p>dragstart,dragover,drop</p>
                             </td>
                             <td>
