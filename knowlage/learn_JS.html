@@ -70,7 +70,7 @@
                         <p>.querySelectorAll()</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>object</q></p>
+                        <p class="return"><q>object array</q></p>
                         <p>รับ class เดียวกันมาเก็บที่ตัวแปร</p>
                         <p>"จำเป็นที่จะต้องสร้างตัวแปรเพื่อเก็บ class แล้ว get เอาข้อมูลแบบ array"</p>
                     </td>
@@ -287,11 +287,43 @@
                     <td class="text-center">
                         <p class="return"><q>object</q></p>
                         <p>กำหนด event ที่ function</p>
-                        <p>get เอาที่อยู่ element ที่ click</p>
+                        <p>get เอาที่อยู่ element</p>
                     </td>
                     <td>
                         <p>function click(event) {</p>
                         <p class="indent">console.log(event.target);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>event.target.tagName</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>string</q></p>
+                        <p>กำหนด event ที่ function</p>
+                        <p>get เอาชื่อของ element</p>
+                    </td>
+                    <td>
+                        <p>function click(event) {</p>
+                        <p class="indent">console.log(event.target.tagName);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>event.target.files[0]</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object</q></p>
+                        <p>กำหนด event ที่ function</p>
+                        <p>เข้าถึงข้อมูลไฟล์ที่อัปโหลดผ่าน element</p>
+                        <p>เช่น input type flie</p>
+                    </td>
+                    <td>
+                        <p>function infile(event) {</p>
+                        <p class="indent">let file = event.target.files[0];</p>
+                        <p class="indent">console.log(file);</p>
                         <p>}</p>
                     </td>
                 </tr>
@@ -315,6 +347,7 @@
                     </td>
                     <td class="text-center">
                         <p class="return"><q>number</q></p>
+                        <p>กำหนด event ที่ function</p>
                         <p>ระบุตำแหน่ง mouse แกน x</p>
                     </td>
                     <td>
@@ -329,27 +362,12 @@
                     </td>
                     <td class="text-center">
                         <p class="return"><q>number</q></p>
+                        <p>กำหนด event ที่ function</p>
                         <p>ระบุตำแหน่ง mouse แกน y</p>
                     </td>
                     <td>
                         <p>function mousey() {</p>
                         <p class="indent">console.log(event.clienY);</p>
-                        <p>}</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-center">
-                        <p>event.target.files[0]</p>
-                    </td>
-                    <td class="text-center">
-                        <p class="return"><q>object</q></p>
-                        <p>เข้าถึงข้อมูลไฟล์ที่อัปโหลดผ่าน element</p>
-                        <p>เช่น input type flie</p>
-                    </td>
-                    <td>
-                        <p>function infile(event) {</p>
-                        <p class="indent">let file = event.target.files[0];</p>
-                        <p class="indent">console.log(file);</p>
                         <p>}</p>
                     </td>
                 </tr>
@@ -684,7 +702,7 @@
                         <p>.matchAll()</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>object</q></p>
+                        <p class="return"><q>object array</q></p>
                         <p>หา string ที่เหมือนกัน</p>
                         <p>"ต้องสร้างตัวแปรเพื่อเก็บ"</p>
                     </td>
@@ -995,9 +1013,9 @@
                         <p>Array.from()</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>array string</q></p>
+                        <p class="return"><q>array</q></p>
                         <p>แปลงและแยก string เป็น array</p>
-                        <p>ตัวแปรนี้มีความสามารถวนซ้ำได้</p>
+                        <p>แปลง object array เป็น array</p>
                     </td>
                     <td>
                         <p>let name = "phuwadon";</p>
