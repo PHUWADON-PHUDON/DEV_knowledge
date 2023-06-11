@@ -166,7 +166,7 @@
                         <p>get เอาตำแหน่ง element</p>
                         <p>ใช้กับ element เท่านั้น</p>
                         <p>มี metthod</p>
-                        <p>x <br> y <br> top <br> left <br> right <br> bottom</p>
+                        <p>x <br> y <br> top <br> left <br> right <br> bottom <br> width <br> height</p>
                     </td>
                     <td>
                         <p>let po = p.getBoundingClientRect();</p>
@@ -260,7 +260,7 @@
                     </td>
                     <td class="text-center">
                         <p class="return"><q>number</q></p>
-                        <p>ตำแหน่งของ scorll แกน X</p>
+                        <p>ตำแหน่งของ scorll แกน X ของ window</p>
                     </td>
                     <td>
                         <p>let s = window.scrollX;</p>
@@ -273,7 +273,7 @@
                     </td>
                     <td class="text-center">
                         <p class="return"><q>number</q></p>
-                        <p>ตำแหน่งของ scorll แกน y</p>
+                        <p>ตำแหน่งของ scorll แกน y ของ window</p>
                     </td>
                     <td>
                         <p>let s = window.scrollY;</p>
@@ -373,6 +373,36 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>event.offsetX</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>กำหนด event ที่ function</p>
+                        <p>ระบุตำแหน่ง mouse ใน element แกน x</p>
+                    </td>
+                    <td>
+                        <p>function mousex() {</p>
+                        <p class="indent">console.log(event.offsetX);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>event.offsetY</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>กำหนด event ที่ function</p>
+                        <p>ระบุตำแหน่ง mouse ใน element แกน y</p>
+                    </td>
+                    <td>
+                        <p>function mousey() {</p>
+                        <p class="indent">console.log(event.offsetY);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>URL.createObjectURL()</p>
                     </td>
                     <td class="text-center">
@@ -431,6 +461,32 @@
                     <td>
                         <p>let e = con.children;</p>
                         <p>console.log(e);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.scrollLeft</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>ตำแหน่งของ scorll แกน x ของ element</p>
+                    </td>
+                    <td>
+                        <p>let s = element.scrollLeft;</p>
+                        <p>console.log(s);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.scrollTop</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>ตำแหน่งของ scorll แกน y ของ element</p>
+                    </td>
+                    <td>
+                        <p>let s = element.scrollTop;</p>
+                        <p>console.log(s);</p>
                     </td>
                 </tr>
                 <tr class="text-center">
