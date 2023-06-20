@@ -87,7 +87,7 @@
                     </td>
                     <td class="text-center">
                         <p class="return"><q>object</q></p>
-                        <p>สร้าง tag html ขึ้นมาใหม่</p>
+                        <p>สร้าง element ขึ้นมาใหม่</p>
                     </td>
                     <td>
                         <p>let p = document.createElement("p");</p>
@@ -95,10 +95,23 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>.prepend()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>เพิ่ม element ที่ถูกสร้างให้อยู่ลำดับแรก</p>
+                    </td>
+                    <td>
+                        <p>let div = document.getElementById("div");</p>
+                        <p>let p = document.createElement("p");</p>
+                        <p>div.prepend(p);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>.appendChild()</p>
                     </td>
                     <td class="text-center">
-                        <p>เพิ่ม tag html ที่ถูกสร้าง</p>
+                        <p>เพิ่ม element ที่ถูกสร้าง</p>
                     </td>
                     <td>
                         <p>let div = document.getElementById("div");</p>
@@ -111,7 +124,7 @@
                         <p>.removeChild()</p>
                     </td>
                     <td class="text-center">
-                        <p>ลบ tag html ที่ถูกสร้าง</p>
+                        <p>ลบ element ที่ถูกสร้าง</p>
                     </td>
                     <td>
                         <p>let div = document.getElementById("div");</p>
@@ -297,21 +310,6 @@
                 </tr>
                 <tr>
                     <td class="text-center">
-                        <p>event.target.tagName</p>
-                    </td>
-                    <td class="text-center">
-                        <p class="return"><q>string</q></p>
-                        <p>กำหนด event ที่ function</p>
-                        <p>get เอาชื่อของ element</p>
-                    </td>
-                    <td>
-                        <p>function click(event) {</p>
-                        <p class="indent">console.log(event.target.tagName);</p>
-                        <p>}</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-center">
                         <p>event.target.files[0]</p>
                     </td>
                     <td class="text-center">
@@ -419,17 +417,6 @@
                 </tr>
                 <tr class="text-center">
                     <td>
-                        <p>.src</p>
-                    </td>
-                    <td>
-                        <p>JavaScript สามารถเปลี่ยนค่าแอตทริบิวต์ HTML</p>
-                    </td>
-                    <td>
-                        <p>document. getElementById("A"). src = "on.png";</p>
-                    </td>
-                </tr>
-                <tr class="text-center">
-                    <td>
                         <p>.style.</p>
                     </td>
                     <td>
@@ -437,6 +424,17 @@
                     </td>
                     <td>
                         <p>document. getElementById("A"). style.fontSize = "4px";</p>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <p>.src</p>
+                    </td>
+                    <td>
+                        <p>JavaScript สามารถเปลี่ยนค่าแอตทริบิวต์ HTML</p>
+                    </td>
+                    <td>
+                        <p>document. getElementById("A"). src = "on.png";</p>
                     </td>
                 </tr>
                 <tr class="text-center">
@@ -452,15 +450,28 @@
                 </tr>
                 <tr>
                     <td class="text-center">
-                        <p>.children</p>
+                        <p>.scrollWidth</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>object array</q></p>
-                        <p>เก็บ element ลูก ของ element แม่</p>
+                        <p class="return"><q>number</q></p>
+                        <p>ความกว้างของ content ใน element</p>
                     </td>
                     <td>
-                        <p>let e = con.children;</p>
-                        <p>console.log(e);</p>
+                        <p>let w = div.scrollWidth;</p>
+                        <p>console.log(w);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.scrollHeight</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>ความสูงของ content ใน element</p>
+                    </td>
+                    <td>
+                        <p>let h = div.scrollHeight;</p>
+                        <p>console.log(h);</p>
                     </td>
                 </tr>
                 <tr>
@@ -487,6 +498,122 @@
                     <td>
                         <p>let s = element.scrollTop;</p>
                         <p>console.log(s);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.scrollTo</p>
+                    </td>
+                    <td class="text-center">
+                        <p>เลื่อน scroll bar ไปตำแหน่งที่กำหนด</p>
+                    </td>
+                    <td>
+                        <p>div.scrollTo(0,100);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.parentNode</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object</q></p>
+                        <p>เข้าถึง element แม่ของ element ลูก</p>
+                    </td>
+                    <td>
+                        <p>let div = span.parentNode</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.children</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object array</q></p>
+                        <p>เข้าถึง element ลูกของ element แม่</p>
+                    </td>
+                    <td>
+                        <p>let e = con.children;</p>
+                        <p>console.log(e);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.tagName</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>string</q></p>
+                        <p>get เอาชื่อของ element</p>
+                    </td>
+                    <td>
+                        <p>function click(event) {</p>
+                        <p class="indent">console.log(event.target.tagName);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.className</p>
+                    </td>
+                    <td class="text-center">
+                        <p><p class="return"><q>string</q></p>
+                        <p>get เอาชื่อ class element หรือ กำหนด class ให้ element</p></p>
+                    </td>
+                    <td>
+                        <p>function click(event) {</p>
+                        <p class="indent">console.log(event.target.className);</p>
+                        <p>}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.offsetWidth</p>
+                    </td>
+                    <td class="text-center">
+                        <p><p class="return"><q>number</q></p>
+                        <p>ความกว้างของ element รวม border</p>
+                    </td>
+                    <td>
+                        <p>let w = div.offsetWidth;</p>
+                        <p>console.log(w);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.offsetHeight</p>
+                    </td>
+                    <td class="text-center">
+                        <p><p class="return"><q>number</q></p>
+                        <p>ความสูงของ element รวม border</p>
+                    </td>
+                    <td>
+                        <p>let h = div.offsetHeight;</p>
+                        <p>console.log(h);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.clientWidth</p>
+                    </td>
+                    <td class="text-center">
+                        <p><p class="return"><q>number</q></p>
+                        <p>ความกว้างของ content ใน element</p>
+                    </td>
+                    <td>
+                        <p>let w = div.clientWidth;</p>
+                        <p>console.log(w);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.clientHeight</p>
+                    </td>
+                    <td class="text-center">
+                        <p><p class="return"><q>number</q></p>
+                        <p>ความสูงของ content ใน element</p>
+                    </td>
+                    <td>
+                        <p>let h = div.clientHeight;</p>
+                        <p>console.log(h);</p>
                     </td>
                 </tr>
                 <tr class="text-center">
