@@ -134,6 +134,42 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>.cloneNode(true)</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object</q></p>
+                        <p>clone element ที่กำหนด</p>
+                    </td>
+                    <td>
+                        <p>let clone = div.cloneNode(true);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.focus()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>element จะได้รับการ focus ใช้กับ element a หรือ element input</p>
+                    </td>
+                    <td>
+                        <p>let input = div.firstChild;</p>
+                        <p>input.focus();</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.blur()</p>
+                    </td>
+                    <td class="text-center">
+                        <p>ยกเลิกการ focus ใช้กับ element a หรือ element input</p>
+                    </td>
+                    <td>
+                        <p>let input = div.firstChild;</p>
+                        <p>input.blur();</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>.classList.toggle(_)</p>
                     </td>
                     <td class="text-center">
@@ -143,7 +179,7 @@
                     </td>
                     <td>
                         <p>let A = document. getElementById("A");</p>
-                        <p>A.classList.toggle("S")</p>
+                        <p>A.classList.toggle("S");</p>
                     </td>
                 </tr>
                 <tr>
@@ -155,7 +191,7 @@
                     </td>
                     <td>
                         <p>let A = document. getElementById("A");</p>
-                        <p>A.classList.add("S")</p>
+                        <p>A.classList.add("S");</p>
                     </td>
                 </tr>
                 <tr>
@@ -167,7 +203,7 @@
                     </td>
                     <td>
                         <p>let A = document. getElementById("A");</p>
-                        <p>A.classList.remove("S")</p>
+                        <p>A.classList.remove("S");</p>
                     </td>
                 </tr>
                 <tr>
@@ -205,7 +241,7 @@
                         <p>output ข้อมูลที่ Console</p>
                     </td>
                     <td>
-                        <p>console.log(4+4)</p>
+                        <p>console.log(4+4);</p>
                     </td>
                 </tr>
                 <tr class="text-center">
@@ -526,14 +562,18 @@
                 <tr>
                     <td class="text-center">
                         <p>.children</p>
+                        <p>.children[_]</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>object array</q></p>
+                        <p class="return"><q>object array , object</q></p>
                         <p>เข้าถึง element ลูกของ element แม่</p>
                     </td>
                     <td>
-                        <p>let e = con.children;</p>
-                        <p>console.log(e);</p>
+                        <p>let e1 = con.children;</p>
+                        <p>console.log(e1);</p>
+                        <br>
+                        <p>let e2 = con.children[0];</p>
+                        <p>console.log(e2);</p>
                     </td>
                 </tr>
                 <tr>
@@ -958,6 +998,20 @@
                     <td>
                         <p>let n = 80.5;</p>
                         <p>console.log(n.toString());</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>eval(_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>เปลี่ยน string ให้เป็น code</p>
+                    </td>
+                    <td>
+                        <p>let num = "50 + 50";</p>
+                        <p>let total = eval(num);</p>
+                        <p>console.log(total);</p>
                     </td>
                 </tr>
                 <tr>
