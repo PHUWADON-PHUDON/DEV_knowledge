@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHUWADON</title>
+    <script src="https://kit.fontawesome.com/9cb18605d1.js" crossorigin="anonymous"></script>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .indent{
+            text-indent: 15px;
+        }
+
+        header{
+            height: 50px;
+            background-color: rgb(244, 228, 13);
+            display: flex;
+            align-items: center;
+        }
+
+        header i{
+            margin-left: 20px;
+            font-size: 25px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: all 0.2s;
+        }
+        header i:hover{
+            color: #fff;
+        }
+
+        .dark1{
+            background-color: #000;
+        }
+
+        .dark2{
+            background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
+            color: #fff;
+        }
+
+        section{
+            padding: 20px;
+            margin: 30px auto 0 auto;
+            width: 100%;
+            border-radius: 4px;
+            background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
+            border: 2px solid transparent;
+        }
+
+        section h1{
+            margin: 10px;
+            text-align: center;
+        }
+
+        section > pre{
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            display: block;
+            background-color: rgba(120, 214, 245,0.2);
+            padding: 15px;
+            line-height:1.5rem;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        h1{
+            font-size: calc(1vw + 10px);
+        }
+
+        .return{
+            color: purple;
+            margin-bottom: 15px;
+        }
+
+
+        p{
+            font-size: calc(0.6vw + 5px);
+        }
+
+        table{
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+
+        th{
+            background-color: rgb(244, 228, 13);
+            color: #fff;
+        }
+
+        td{
+            padding: 20px 20px 20px 20px;
+            letter-spacing: 1px;
+            background-color: rgb(244, 228, 13,0.2);
+        }
+
+        th,td{
+            width: 33.33%;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .style_event_btn{
+            margin-top: 20px;
+            padding: 8px;
+            border-radius: 5px;
+            background-color: #f4e40d;
+        }
+
+        .title{
+            margin: 0 0 0 0;
+            color: #2f59d1;
+        }
+
+        .style_event_con{
+            bottom: -200px;
+            width: 100%;
+            height: 0;
+            background-color: #fff;
+            transition: all .2s;
+            overflow: hidden;
+        }
+
+        .eventshow{
+            margin-top: 5px;
+            height: 450px;
+        }
+
+        /* responsive */
+
+        @media screen and (max-width: 670px) {
+
+            section{
+                padding: 10px;
+            }
+
+            td{
+                padding-top: 20px;
+            }
+        }
+
+        @media screen and (max-width: 565px) {
+            p{
+                font-size: 7px;
+            }
+        }
+
+        @media screen and (max-width: 460px) {
+
+            td{
+                padding: 10px 10px 10px 10px;
+            }
+
+            section{
+                padding: 0;
+                margin: 30px auto 0 auto;
+                border-radius: 4px;
+                background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
+                border: 2px solid transparent;
+            }
+        }
+
+        @media screen and (max-width: 355px) {
+            section{
+                background: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="mainmenu.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <i class="fa-solid fa-sun dark"></i>
+    </header>
+
+    <section>
+        <table>
+            <tr style="position: sticky; top: 0;">
+                <th><h1>CODE</h1></th>
+                <th><h1>MEANING</h1></th>
+                <th><h1>SAMPLE</h1></th>
+            </tr>
+
+            <tr>
+                <td class="text-center">
+                    <p>exports.</p>
+                    <p>require(_)</p>
+                </td>
+                <td class="text-center">
+                    <p>exports ส่งค่าจากไฟล์อื่น require รับค่าขจากไฟล์อื่น</p>
+                </td>
+                <td>
+                    <p>file1:</p>
+                    <p>let num = 100;</p>
+                    <p>exports.num = num;</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>file2:</p>
+                    <p>let number = require(./file1);</p>
+                    <p>console.log(number.num);</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <script>
+        let title = document.querySelector(".title");
+        let style_event_con = document.querySelector(".style_event_con");
+
+        const Dark = document.querySelector(".dark");
+        Dark.onclick=()=>{
+            const tap = document.querySelector("body")
+            tap.classList.toggle("dark2");
+            const Tap = document.querySelector("section");
+            Tap.classList.toggle("dark2");
+            style_event_con.classList.toggle("dark2");
+        }
+
+        title.addEventListener("click",() => {
+            style_event_con.classList.toggle("eventshow");
+        })
+    </script>
+    
+</body>
+</html>

@@ -490,7 +490,7 @@
                     </td>
                     <td class="text-center">
                         <p class="return"><q>number</q></p>
-                        <p>ความกว้างของ content ใน element</p>
+                        <p>ความกว้างของ scroll ที่สามารถ scroll ได้ใน element</p>
                     </td>
                     <td>
                         <p>let w = div.scrollWidth;</p>
@@ -503,7 +503,7 @@
                     </td>
                     <td class="text-center">
                         <p class="return"><q>number</q></p>
-                        <p>ความสูงของ content ใน element</p>
+                        <p>ความสูงของ scroll ที่สามารถ scroll ได้ใน element</p>
                     </td>
                     <td>
                         <p>let h = div.scrollHeight;</p>
@@ -1002,42 +1002,28 @@
                 </tr>
                 <tr>
                     <td class="text-center">
-                        <p>eval(_)</p>
+                        <p>JSON.parse(_)</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>number</q></p>
-                        <p>เปลี่ยน string ให้เป็น code</p>
+                        <p class="return"><q>object & array</q></p>
+                        <p>แปลง json string ให้เป็น json object</p>
                     </td>
                     <td>
-                        <p>let num = "50 + 50";</p>
-                        <p>let total = eval(num);</p>
-                        <p>console.log(total);</p>
+                        <p>let j = "{a:1,b:2}";</p>
+                        <p>console.log(JSON.parse(j));</p>
                     </td>
                 </tr>
                 <tr>
                     <td class="text-center">
-                        <p>parseInt(_)</p>
+                        <p>JSON.stringfy(_)</p>
                     </td>
                     <td class="text-center">
-                        <p class="return"><q>number</q></p>
-                        <p>convert string to int</p>
+                        <p class="return"><q>object & array</q></p>
+                        <p>แปลง json object ให้เป็น json string</p>
                     </td>
                     <td>
-                        <p>let n = "80";</p>
-                        <p>console.log(parseInt(n));</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-center">
-                        <p>parseFloat(_)</p>
-                    </td>
-                    <td class="text-center">
-                        <p class="return"><q>number</q></p>
-                        <p>convert string to float</p>
-                    </td>
-                    <td>
-                        <p>let n = "80.5"</p>
-                        <p>console.log(parseFloat(n));</p>
+                        <p>let j = {a:1,b:2};</p>
+                        <p>console.log(JSON.stringfy(j));</p>
                     </td>
                 </tr>
                 <tr>
@@ -1102,6 +1088,46 @@
                     <td>
                         <p>let A = 80;</p>
                         <p>console.log(typeof(A));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>eval(_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>เปลี่ยน string ให้เป็น code</p>
+                    </td>
+                    <td>
+                        <p>let num = "50 + 50";</p>
+                        <p>let total = eval(num);</p>
+                        <p>console.log(total);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>parseInt(_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>convert string to int</p>
+                    </td>
+                    <td>
+                        <p>let n = "80";</p>
+                        <p>console.log(parseInt(n));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>parseFloat(_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>number</q></p>
+                        <p>convert string to float</p>
+                    </td>
+                    <td>
+                        <p>let n = "80.5"</p>
+                        <p>console.log(parseFloat(n));</p>
                     </td>
                 </tr>
                 <tr>
@@ -1403,6 +1429,7 @@
                         <p>.flat(_)</p>
                     </td>
                     <td class="text-center">
+                        <p class="return"><q>array</q></p>
                         <p>ทำ array ให้เป็น 1มิติ</p>
                     </td>
                     <td>
@@ -1535,7 +1562,9 @@
                                 <p><ins>MOUSE EVENT</ins></p>
                                 <br>
                                 <p>click,mouseover,mouseout <br> mousemove,change</p>
+                                <p>mouseenter,mouseout</p>
                                 <p>dragstart,dragover,drop</p>
+                                <p>transitionend,animationend</p>
                             </td>
                             <td>
                                 <p>() => {} or FunctionName</p>
