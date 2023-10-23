@@ -698,8 +698,8 @@
                     <p>border-image</p>
                 </td>
                 <td>
-                    <p>url(border.png) 30 round</p>
-                    <p>url(border.png) 30 stretch</p>
+                    <p>url("border.png") 30 round</p>
+                    <p>url("border.png") 30 stretch</p>
                 </td>
             </tr>
             <tr class="text-center">
@@ -907,7 +907,7 @@
             <tr class="text-center">
                 <td>
                     <h6>"รูปแบบการทำ transition"</h6>
-                    <p>transition-time-function</p>
+                    <p>transition-timing-function</p>
                 </td>
                 <td>
                     <p>ease</p>
@@ -915,6 +915,7 @@
                     <p>ease-in</p>
                     <p>ease-out</p>
                     <p>ease-in-out</p>
+                    <p>cubic-bezier(0.25,0.1,0.25,1)</p>
                 </td>
             </tr>
             <tr class="text-center">
@@ -923,7 +924,7 @@
                     <p>Shorthand.transition</p>
                 </td>
                 <td>
-                    <p>all 0.2s ease</p>
+                    <p>all 0.2s ease 1s</p>
                 </td>
             </tr>
             <tr>
@@ -1023,10 +1024,10 @@
                     <p>resize</p>
                 </td>
                 <td>
+                    <p>none</p>
                     <p>horizontal</p>
                     <p>vertical</p>
                     <p>both</p>
-                    <p>none</p>
                 </td>
             </tr>
             <tr>
@@ -1434,7 +1435,7 @@
                     <p>Shorthand.animation</p>
                 </td>
                 <td>
-                    <p>name 5s infinite</p>
+                    <p>name 5s linear infinite 1s forwards</p>
                 </td>
             </tr>
         </table>
