@@ -246,6 +246,17 @@
                         <p>console.log(po.x);</p>
                     </td>
                 </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.scrollTo(_,_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p>เลื่อน scroll bar ไปตำแหน่งที่กำหนด</p>
+                    </td>
+                    <td>
+                        <p>div.scrollTo(0,100);</p>
+                    </td>
+                </tr>
                 <tr class="text-center">
                     <td>
                         <p>document.write(_)</p>
@@ -562,17 +573,6 @@
                 </tr>
                 <tr>
                     <td class="text-center">
-                        <p>.scrollTo</p>
-                    </td>
-                    <td class="text-center">
-                        <p>เลื่อน scroll bar ไปตำแหน่งที่กำหนด</p>
-                    </td>
-                    <td>
-                        <p>div.scrollTo(0,100);</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-center">
                         <p>.parentNode</p>
                     </td>
                     <td class="text-center">
@@ -660,7 +660,7 @@
                     </td>
                     <td class="text-center">
                         <p><p class="return"><q>number</q></p>
-                        <p>ความกว้างของ content ใน element</p>
+                        <p>ความกว้างของ element ไม่รวม border</p>
                     </td>
                     <td>
                         <p>let w = div.clientWidth;</p>
@@ -673,7 +673,7 @@
                     </td>
                     <td class="text-center">
                         <p><p class="return"><q>number</q></p>
-                        <p>ความสูงของ content ใน element</p>
+                        <p>ความสูงของ element ไม่รวม border</p>
                     </td>
                     <td>
                         <p>let h = div.clientHeight;</p>
@@ -698,6 +698,7 @@
                         <p>.volume</p>
                     </td>
                     <td class="text-center">
+                        <p><p class="return"><q>number</q></p>
                         <p>เสียงของ video หรือ audio ใช้ได้ตั้งแต่ 0.0 - 1.0</p>
                     </td>
                     <td>
@@ -844,7 +845,7 @@
                         <p>let s = "sum".concat(x + y);</p>
                         <br>
                         <p>let ar1 = [70,80];</p>
-                        <p>let ar2 = [90,100;];</p>
+                        <p>let ar2 = [90,100];</p>
                         <p>let newar = ar1.concat(ar2);</p>
                     </td>
                 </tr>
