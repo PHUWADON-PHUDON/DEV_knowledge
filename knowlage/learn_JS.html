@@ -108,6 +108,20 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>.insertBefore(_,_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p>เพิ่ม element ไปด้านหน้า element ที่กำำหนด</p>
+                    </td>
+                    <td>
+                        <p>let div = document.getElementById("div");</p>
+                        <p>let p = document.querySelectorAll(".p");</p>
+                        <p>let b = document.createElement("b");</p>
+                        <p>div.insertBefore(b,p[0]);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>.appendChild(_)</p>
                     </td>
                     <td class="text-center">
@@ -190,6 +204,19 @@
                     <td>
                         <p>video.pause();</p>
                         <p>audio.pause();</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.toLocaleString()</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>string</q></p>
+                        <p>แปลงตัวเลขเป็น string ที่ใช้งานทั่วไป เช่น 100000 ก็จะเป็น 100,000</p>
+                    </td>
+                    <td>
+                        <p>let num = 100000;</p>
+                        <p>cosole.log(num.toLocaleString());</p>
                     </td>
                 </tr>
                 <tr>
@@ -998,12 +1025,25 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>.match(_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>string</q></p>
+                        <p>หา string ที่เหมือนกัน</p>
+                    </td>
+                    <td>
+                        <p>let str = "you you";</p>
+                        <p>let text = str.match("you");</p>
+                        <p>console.log(text);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>.matchAll(_)</p>
                     </td>
                     <td class="text-center">
                         <p class="return"><q>object array</q></p>
                         <p>หา string ที่เหมือนกัน</p>
-                        <p>"ต้องสร้างตัวแปรเพื่อเก็บ"</p>
                     </td>
                     <td>
                         <p>let str = "you you";</p>
@@ -1074,6 +1114,19 @@
                     <td>
                         <p>let n = 80.5;</p>
                         <p>console.log(n.toString());</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.trim()</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>string</q></p>
+                        <p>ตัดช่องว่าง ซ้าย ขวา ในข้อความ</p>
+                    </td>
+                    <td>
+                        <p>let text = "   A   ";</p>
+                        <p>console.log(text.trim());</p>
                     </td>
                 </tr>
                 <tr>
