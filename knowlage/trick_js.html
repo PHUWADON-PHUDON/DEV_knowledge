@@ -135,6 +135,19 @@
         </div>
     </section>
 
+    <section>
+        <p class="click_trick_upgrade">CHECK ELEMENT LOOP</p>
+        <div class="trick_upgrade">
+            <p style="padding: 20px 80px;">เมื่อต้องการ check event กับ element object ที่ถูกสร้างขึ้นมาใหม่
+                จะไม่สามารถ loop เพื่อเข้าถึง element object ที่ต้องการได้ ต้องสร้าง event ด้านนอก
+                เพื่อให้ค่าที่อยู่ใน loop reset ค่าถึงจะสามารถใช้งานได้แต่จะมีปัญหาคือการทำงานใน
+                event ที่ซ้อนกันมันจะทำงานมากกว่า 1 รอบจึงจำเป็นที่จะต้องสร้าง property และกำหนดค่าเท่ากับ true
+                เพื่อที่จะ check ว่า element object ที่ถูกสร้างมาใหม่นั้นเริ่มแรกยังไม่ถูกกำหนด 
+                property ก็จะสามารถทำงานใน event ที่กำหนดได้เมื่อทำงานเสร็จก็จะกำหนด property ให้เท่ากับ true</p>
+            <img src="jsT6.jpg" alt="">
+        </div>
+    </section>
+
     <script>
 
         let dark = document.querySelector(".dark");
@@ -171,6 +184,14 @@
         click_trick5.addEventListener("click",() => {
             trick5.classList.toggle("trick_show");
         });
+
+        let click_trick_upgrade = document.querySelectorAll(".click_trick_upgrade");
+        let trick_upgrade = document.querySelectorAll(".trick_upgrade");
+        for (let i = 0 ; i < click_trick_upgrade.length ; i++) {
+            click_trick_upgrade[i].addEventListener("click",() => {
+                trick_upgrade[i].classList.toggle("trick_show");
+            });
+        }
 
     </script>
     
