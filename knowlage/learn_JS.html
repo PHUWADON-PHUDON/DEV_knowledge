@@ -1058,10 +1058,14 @@
                     <td class="text-center"> 
                         <p class="return"><q>bool</q></p>
                         <p>ตรวจสอบ string ที่กำหนดเป็นสมาชิกตัวแปร string หรือไม่</p>
+                        <p>ตรวจสอบ array ที่กำหนดเป็นสมาชิกตัวแปร array หรือไม่</p>
                     </td>
                     <td>
                         <p>let str = "i love js";</p>
                         <p>console.log (str.includes("love"));</p>
+                        <br>
+                        <p>let arr = [80,90,100];</p>
+                        <p>console.log(arr.includes(100));</p>
                     </td>
                 </tr>
                 <tr>
@@ -1311,7 +1315,7 @@
                         <p>sessionStorage.setItem(_,_)</p>
                     </td>
                     <td class="text-center">
-                        <p>บันทึกข้อมูลลงใน browser แบบถางร</p>
+                        <p>บันทึกข้อมูลลงใน browser แบบถาวร</p>
                         <p>บันทึกข้อมูลลงใน browser แบบชั่วคราว</p>
                     </td>
                     <td>
@@ -1569,6 +1573,20 @@
                 </tr>
                 <tr>
                     <td class="text-center">
+                        <p>.some(_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>bool</q></p>
+                        <p>ตรวจสอบข้อมูลใน array ตรงกับข้อมูลที่กำหนดหรือไม่</p>
+                    </td>
+                    <td>
+                        <p>let arr = [100,200,300];</p>
+                        <p>let true = arr.some(e => e == 200);</p>
+                        <p>console.log(true);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
                         <p>.sort(_)</p>
                     </td>
                     <td class="text-center">
@@ -1633,6 +1651,32 @@
                     <td>
                         <p>let t = new Date();</p>
                         <p>console.log(t);</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>new Set(_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p class="return"><q>object</q></p>
+                        <p>สร้าง set ข้อมูลที่ไม่ซ้ำกัน</p>
+                    </td>
+                    <td>
+                        <p>let letter = new Set(["a","a"]);</p>
+                        <p>console.log(Array.from(letter));</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <p>.add(_)</p>
+                    </td>
+                    <td class="text-center">
+                        <p>เพิ่มข้อมูลเข้าไปใน set</p>
+                    </td>
+                    <td>
+                        <p>let letter = new Set(["a","a"]);</p>
+                        <p>letter.add("b");</p>
+                        <p>console.log(Array.from(letter));</p>
                     </td>
                 </tr>
                 <tr>
