@@ -46,11 +46,8 @@
         }
 
         section{
-            padding: 20px;
-            margin: 30px auto 0 auto;
             width: 100%;
             border-radius: 4px;
-            background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
             border: 2px solid transparent;
         }
 
@@ -138,11 +135,6 @@
         /* responsive */
 
         @media screen and (max-width: 670px) {
-
-            section{
-                padding: 10px;
-            }
-
             td{
                 padding-top: 20px;
             }
@@ -155,16 +147,13 @@
         }
 
         @media screen and (max-width: 460px) {
-
             td{
                 padding: 10px 10px 10px 10px;
             }
 
             section{
                 padding: 0;
-                margin: 30px auto 0 auto;
                 border-radius: 4px;
-                background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
                 border: 2px solid transparent;
             }
         }
@@ -229,10 +218,6 @@
             Tap.classList.toggle("dark2");
             style_event_con.classList.toggle("dark2");
         }
-
-        title.addEventListener("click",() => {
-            style_event_con.classList.toggle("eventshow");
-        })
     </script>
     
 </body>

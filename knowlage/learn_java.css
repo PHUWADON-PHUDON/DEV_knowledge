@@ -33,11 +33,7 @@ header i:hover{
 }
 
 section{
-    padding: 20px;
-    margin: 30px auto 0 auto;
-    width: 68%;
     border-radius: 4px;
-    background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
     border: 2px solid transparent;
 }
 
@@ -103,12 +99,6 @@ th,td{
 
 
 /* responsive */
-@media screen and (max-width: 1130px) {
-    section{
-        width: 80%;
-    }
-}
-
 @media screen and (max-width: 900px) {
     section{
         width: 100%;
@@ -116,11 +106,6 @@ th,td{
 }
 
 @media screen and (max-width: 670px) {
-
-    section{
-        padding: 10px;
-    }
-
     td{
         padding-top: 20px;
         padding-left: 5px;

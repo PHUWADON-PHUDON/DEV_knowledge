@@ -37,11 +37,8 @@ header i:hover{
 }
 
 section{
-    padding: 20px;
-    margin: 30px auto 0 auto;
     width: 100%;
     border-radius: 4px;
-    background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
     border: 2px solid transparent;
 }
 
@@ -101,7 +98,9 @@ th,td{
 }
 
 .style_event_btn{
+    cursor: pointer;
     margin-top: 20px;
+    margin-bottom: 5px;
     padding: 8px;
     border-radius: 5px;
     background-color: #f4e40d;
@@ -129,11 +128,6 @@ th,td{
 /* responsive */
 
 @media screen and (max-width: 670px) {
-
-    section{
-        padding: 10px;
-    }
-
     td{
         padding-top: 20px;
     }
@@ -151,13 +145,7 @@ th,td{
         padding: 10px 10px 10px 10px;
     }
 
-    section{
-        padding: 0;
-        margin: 30px auto 0 auto;
-        border-radius: 4px;
-        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) padding-box,linear-gradient( 60deg,red,rgb(214, 92, 241)) border-box;
-        border: 2px solid transparent;
-    }
+    
 }
 
 @media screen and (max-width: 355px) {
